@@ -1,0 +1,49 @@
+ANOTAÇÕES E DICAS DE JAVA SCRIPT
+
+Observação: Por Padrão Javascript usa a indentação CAMEL CASE..isso significa que as expressoes com duas ou mais palavras terão as iniciais apartir da segunda palavra em maiusculo.
+Ex:
+querySelector
+querySelectorAll
+
+
+1 - dom é a abreviação de document.
+  Portando a função document.queryselector() vai fazer uma busca dentro do documento em busca do que estiver dentro dos ()
+
+
+2 - console.log() é a função para exibir no console do navegador o que estiver dentro dos ()
+
+
+3 - querySelector() é um comando que serve para fazer buscas no dom, ele vai buscar o primeiro item que encontrar com a especificação dentro do ().
+  Ex:
+    document.querySelector('h1')  - Vai guardar na memoria a primeira tag h1 que encontrar.
+
+
+  console.log(document.querySelector('h1')) - armazena a tag inteira ex: <h1>blablabla</h1>
+
+  console.log(document.querySelector('h1').textContent) - armazena apenas o conteudo de texto da tag. ex: blablabla
+
+
+
+
+
+
+
+
+// Exemplo de função
+
+// titulo.addEventListener("click", mostraMensagem);
+
+// function mostraMensagem() {
+//   console.log("Clicaram em mim ");
+// }
+
+// Exemplo de função anonima
+titulo.addEventListener("click", function(){
+  console.log("Sou uma arrow function anonima");
+}
+
+
+Exemplo de uma arrow function
+titulo.addEventListener("click",() =>{
+  console.log("Sou uma arrow function anonima");
+}
